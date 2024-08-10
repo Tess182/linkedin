@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0;
+}
+    
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 1.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12rem;
+    font-size: 15px;
+}
+
+.navbar img{
+    width: 110px;
+    height: 50px;
+}
+
+.menu-container{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.menulist{
+    display: flex;
+    gap: 2rem;
+}
+.menulist-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(0,0,0,0.6);
+    gap: 0.1rem;
+    cursor: pointer;
+}
+
+.menulist-item :hover{
+    color: #000;
+}
+
+.menulist-item I{
+    font-size: 1.7rem;
+}
+.with-border{
+    border-left: 1px solid rgba(0,0,0,0.6);
+    border-right:1px solid rgba(0,0,0,0.6);
+    padding: 0 1rem;
+}
+
+.buttons{
+    display: flex;
+    gap: 3rem;
+}
+
+.btn {
+    height: min-content;
+    min-height: 48px;
+    border-radius: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.join{
+    color: rgba(0,0,0,0.75);
+    box-shadow: 0.001px;
+    background-color: rgba(0,0,0,0);
+}
+.join:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.signin{
+    color: #0a66c2;
+    background-color: white;
+    box-shadow: 0 0 0 1px #0a66c2;
+}
+
+.signin:hover{
+    background-color: rgba(112,181,249,0.15);
+}
+
+#form-area{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+}
+
+
+#img-container, 
+#text-container{
+    width: 50%;
+}
+
+#image{
+    width: 700px;
+    height: 560px;
+}
+
+.padding{
+    padding-left: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.padding h1{
+    font-size: 56px;
+    color: rgb(147, 70, 70);
+    font-weight: 100;
+}
+
+
+#googlelogo{
+    padding: 0.1px 1px;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    max-width: 400px;
+    min-width: min-content;
+    background-color: #fbf5f5;
+    background-image: none;
+    border: 1px solid;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: "google sans", arial, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    letter-spacing: 0.25px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-weight: 600;
+    width: 700%;
+}
+#policies{
+    font-size: 12px;
+    text-align: center;
+    max-width: 400px;
+    min-width: min-content;
+    color: rgba(0,0,0,0.6);
+}
+#policies a{
+    text-decoration: none;
+}
+#policies a:hover{
+    text-decoration: underline;
+}
+
+.padding hr{
+    border: none solid;
+    width: 40%;
+    gap: 1rem;
+}
+
+#line{
+    display: inline-flex;
+    row-gap: 1rem;
+    margin: 0;
+    align-items: center;
+    width: 70%;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width:200% ;
+    max-width: 400px;
+    min-width: min-content;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+#input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+#input-field label{
+    font-size: 14px;
+    font-weight: 600;
+    gap: 0.3rem;
+    color: rgba(0,0,0,0.75);
+}
+#input-field input{
+    background-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,0.9);
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.75);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 16px;
+}
+#forgot-p{
+    text-decoration: none;
+    font-weight: 500;
+    color: #0a66c2;
+}
+#forgot-p:hover{
+    text-decoration: underline;
+}
+
+#signin{
+    height: min-content;
+    min-height: 48px;
+    border-radius: 24px;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: #0a66c2;
+    box-shadow:0 0 0 1px rgba(0,0,0,0) ;
+    color: #fbf5f5;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+#signin:hover{
+    background-color: #004182;
+}
+#new{
+    font-size: 16px;
+    text-align: center;
+    max-width: 400px;
+    min-width: min-content;
+    font-weight: 500;
+}
+#new a{
+    text-decoration: none;
+}
+#new a:hover{
+    text-decoration: underline;
+}
